@@ -2,13 +2,7 @@
   functions = "functions"
 
 [[redirects]]
-from = "/j"
-to = "j.json"
-status = 200
-force = true 
-
-[[redirects]]
-from = "/.netlify/functions/myfunc"
-to = "index.html"
+from = "/*"
+to = "/.netlify/functions/myfunc"
 status = 200
 force = true 

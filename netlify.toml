@@ -2,6 +2,12 @@
   functions = "functions"
 
 [[redirects]]
+from = "/j"
+to = "j.json"
+status = 200
+force = true 
+
+[[redirects]]
 from = "/*"
 to = "index.html"
 status = 200

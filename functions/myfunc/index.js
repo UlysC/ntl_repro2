@@ -7,7 +7,7 @@ const headers = {
 exports.handler = async event => {
   if (event.httpMethod != "DELETE") {
       return {
-        statusCode: 205,
+        statusCode: 400,
         headers,
         body: JSON.stringify({ message: "not delete" }),
       }

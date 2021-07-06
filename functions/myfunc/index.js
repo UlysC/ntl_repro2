@@ -5,6 +5,13 @@ const headers = {
   "Content-Type": "application/json",
 }
 exports.handler = async event => {
+  if (event.httpMethod != "DELETE") {
+      return {
+        statusCode: 205,
+        headers,
+        body: JSON.stringify({ message: "not delete" }),
+      }
+  }
   return {
     statusCode: 200,
     headers,

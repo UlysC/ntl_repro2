@@ -7,3 +7,10 @@ to = "/.netlify/functions/myfunc"
 status = 200
 force = true 
 headers = {X-From = "netlify"}
+
+[[redirects]]
+from = "/myotherfunc"
+to = "/.netlify/functions/myotherfunc"
+status = 200
+force = true 
+headers = {X-From = "netlify"}

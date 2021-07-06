@@ -5,7 +5,7 @@ const headers = {
   "Content-Type": "application/json",
 }
 exports.handler = async event => {
-  if (event.httpMethod != "DELETE") {
+  if (event.httpMethod != "GET") {
       return {
         statusCode: 400,
         headers,
